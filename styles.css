@@ -46,3 +46,22 @@ h2 { font-size: 1.5rem; font-weight: 500; margin-bottom: 1rem; }
 .pub-type { font-size: 0.75rem; background: #eff6ff; color: #1d4ed8; padding: 0.25rem 0.5rem; border-radius: 0.25rem; }
 .pub-meta a { font-size: 0.875rem; color: #6b7280; transition: color 0.2s; }
 .pub-meta a:hover { color: #374151; }
+.about-section {
+  display: flow-root;
+}
+
+.about-img {
+  float: right;
+  width: clamp(180px, 30vw, 260px);
+  margin: 0.35rem 0 1.25rem 2rem;
+  border-radius: 8px;
+}
+
+@media (max-width: 700px) {
+  .about-img {
+    float: none;
+    display: block;
+    width: min(260px, 100%);
+    margin: 0 0 1.5rem 0;
+  }
+}
